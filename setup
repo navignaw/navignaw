@@ -1,0 +1,9 @@
+#!/bin/bash
+
+OS=$(uname -s)
+
+if  [ $OS == "Linux" ]; then
+    . venv/bin/activate
+else
+    venv/scripts/activate
+fi
