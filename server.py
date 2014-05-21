@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__)
 if 'HEROKU' in os.environ: # Production mode
-    # do nothing
+    pass # do nothing
 else:
     app.debug = True
 
