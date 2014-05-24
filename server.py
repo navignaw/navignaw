@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, send_file, make_response
 import os
 
 
@@ -9,9 +9,20 @@ else:
     app.debug = True
 
 
+# Routing
+def loadHtml(path):
+    if app.debug: # Development: send uncached
+        return make_response(open(path).read())
+    return send_file(path)
+
+
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return loadHtml('templates/index.html')
+
+@app.route('/partials/<partial>', methods=['GET'])
+def getPartial(partial):
+    return loadHtml('static/partials/' + partial)
 
 
 #@app.route('/directory', methods=['GET'])

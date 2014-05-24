@@ -1,0 +1,28 @@
+
+body {
+  background-color: #c4cfe0;
+}
+
+.jumbotron {
+  background-color: #3f9be6;
+  color: white;
+}
+
+.red {
+  color: #d32525;
+}
+.green {
+  color: #1e9e61;
+}
+.blue {
+  color: #3f9be6;
+}
+.orange {
+  color: #d3772f;
+}
+.yellow {
+  color: #fce200;
+}
+.grey {
+  color: #d7e0ee;
+}

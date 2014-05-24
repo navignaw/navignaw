@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="navignaw">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>navignaw.me | software and game development portfolio</title>
+    <meta name="description" content="software and game development portfolio">
+    <meta name="keywords" content="software, engineer, game, development, design, code">
+    <meta name="author" content="Ivan Wang">
+
+    <title>Ivan Wang | software and game development portfolio</title>
     
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="/static/css/style.css"/>
@@ -13,12 +17,29 @@
   <body>
     <div class="jumbotron">
       <div class="container">
-        <h1>navignaw.me</h1>
-        <h2>software and game development portfolio</h2>
+        <h1>ivan wang.me</h1>
+        <h2 class="grey">software and game development portfolio</h2>
       </div>
     </div>
 
-    <script src="/static/js/jquery/jquery-2.1.0.min.js"></script>
+    <div class="container">
+      <ul class="menu">
+        <li><a href="#/about">About</a></li>
+        <li><a href="#/games">Games</a></li>
+      </ul>
+
+      <div ng-view></div>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-route.min.js"></script> 
+    <script src="static/js/app.js"></script>
+    <script src="static/js/routes.js"></script>
+    <script src="static/js/services.js"></script>
+    <script src="static/js/controllers.js"></script>
+    <script src="static/js/filters.js"></script>
+    <script src="static/js/directives.js"></script>
   </body>
 </html>
