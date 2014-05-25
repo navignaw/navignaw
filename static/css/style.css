@@ -51,6 +51,7 @@ body {
   border-bottom-left-radius: 8px;
   margin-top: 20px;
   padding: 15px;
+  padding-top: 0;
 
   background: #d7e0ee; /* Old browsers */
   background: -moz-linear-gradient(left, #d7e0ee 0%, #d7e0ee 80%, #c5cee0 100%); /* FF3.6+ */
@@ -67,8 +68,18 @@ body {
 }
 
 .project-banner {
+  transition: background-color 0.5s;
   height: 100px;
   width: 200px;
   display: inline-block;
-  background-color: white;
+  border: #c4cfe0 1px solid;
+  text-align: center;
+  cursor: pointer;
+}
+.project-banner:hover {
+  background-color: #c4cfe0;
+}
+
+.project-caption {
+  margin-top: 60px;
 }
