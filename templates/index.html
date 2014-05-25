@@ -32,23 +32,44 @@
 
         <!-- First carousel slide: project links -->
         <div class="item active">
-          <div class="container">
+          <div class="container" ng-controller="ProjectsCtrl">
             
             <div class="row">
               <div class="project-slide red-edge col-lg-10 col-lg-offset2">
-                <h3>Web Development</h3>
+                <h3>Web Development <small><a>Show all...</a></small></h3>
+
+                <div class="col-lg-11">
+                  <div class="project-banner" ng-repeat="project in projects | filter:{type: 'web'}:true"
+                       ng-click="go('/projects/' + project.id)">
+                    {{project.name}}
+                  </div>
+                </div>
               </div>
             </div>
 
             <div class="row">
               <div class="project-slide green-edge col-lg-10 col-lg-offset2">
-                <h3>Mobile Apps</h3>
+                <h3>Mobile Apps <small><a>Show all...</a></small></h3>
+
+                <div class="col-lg-11">
+                  <div class="project-banner" ng-repeat="project in projects | filter:{type: 'mobile'}:true"
+                       ng-click="go('/projects/' + project.id)">
+                    {{project.name}}
+                  </div>
+                </div>
               </div>
             </div>
 
             <div class="row">
               <div class="project-slide orange-edge col-lg-10 col-lg-offset2">
-                <h3>Game Development</h3>
+                <h3>Game Development <small><a>Show all...</a></small></h3>
+
+                <div class="col-lg-11">
+                  <div class="project-banner" ng-repeat="project in projects | filter:{type: 'game'}:true"
+                       ng-click="go('/projects/' + project.id)">
+                    {{project.name}}
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -60,7 +81,7 @@
           <div class="container">
             <div ng-view></div>
             
-            <button class="btn" ng-click="carouselPrev()">Back</button>
+            <button class="btn" ng-click="go('/')">&#171; Back</button>
           </div>
         </div>
       </div>
@@ -69,10 +90,11 @@
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>  
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-route.min.js"></script> 
     <script src="static/js/app.js"></script>
     <script src="static/js/routes.js"></script>
+    <script src="static/js/projects.js"></script>
     <script src="static/js/services.js"></script>
     <script src="static/js/controllers.js"></script>
     <script src="static/js/filters.js"></script>

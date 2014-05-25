@@ -45,15 +45,30 @@ body {
 
 .project-slide {
   transition: margin-left 0.5s;
-  background-color: #d7e0ee;
   border-left-width: 12px;
   border-left-style: solid;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
   margin-top: 20px;
   padding: 15px;
+
+  background: #d7e0ee; /* Old browsers */
+  background: -moz-linear-gradient(left, #d7e0ee 0%, #d7e0ee 80%, #c5cee0 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#d7e0ee), color-stop(80%,#d7e0ee), color-stop(100%,#c5cee0)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #d7e0ee 0%,#d7e0ee 80%,#c5cee0 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #d7e0ee 0%,#d7e0ee 80%,#c5cee0 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #d7e0ee 0%,#d7e0ee 80%,#c5cee0 100%); /* IE10+ */
+  background: linear-gradient(to right, #d7e0ee 0%,#d7e0ee 80%,#c5cee0 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7e0ee', endColorstr='#c5cee0',GradientType=1 ); /* IE6-9 */
 }
 
 .project-slide:hover {
   margin-left: 30px;
+}
+
+.project-banner {
+  height: 100px;
+  width: 200px;
+  display: inline-block;
+  background-color: white;
 }

@@ -4,7 +4,6 @@
 
 angular.module('navignaw.controllers', [])
     .controller('HomeCtrl', ['$scope', '$location', function($scope, $location) {
-        var routes = ['/web', '/mobile', '/games'];
         var carousel = $("#outer-carousel");
 
         $scope.carouselNext = function() {
@@ -17,7 +16,7 @@ angular.module('navignaw.controllers', [])
 
         // If switching to new page, slide carousel
         var checkPath = function() {
-            if (routes.indexOf($location.path()) !== -1)
+            if ($location.path().substring(0, 9) === '/projects')
                 $scope.carouselNext();
             else
                 $scope.carouselPrev();
@@ -35,26 +34,13 @@ angular.module('navignaw.controllers', [])
 
     }])
 
-    .controller('WebCtrl', ['$scope', function($scope) {
-
+    .controller('ProjectsCtrl', ['$scope', 'projects', function($scope, projects) {
+        $scope.projects = projects;
     }])
 
-    .controller('MobileCtrl', ['$scope', function($scope) {
-
-    }])
-
-    .controller('GamesCtrl', ['$scope', '$rootScope', '$location', function($scope, $rootScope, $location) {
-        /*$scope.location = $location;
-
-        // Add new game to the list
-        $scope.addGame = function() {
-            $scope.games.$add({title: "New Game", template: "conqueror"}).then(function(ref) {
-                $location.path('/games/' + ref.name());
-            });
-        };*/
-    }])
-
-    .controller('GameDetailCtrl', ['$scope', function($scope) {
-
+    .controller('ProjectCtrl', ['$scope', '$routeParams', '$filter', 'projects', function($scope, $routeParams, $filter, projects) {
+        var projects = $filter('filter')(projects, {id: $routeParams.projectId}, true);
+        $scope.project = projects.length ? projects[0] : null;
+        console.log($scope.project);
     }])
 ;
