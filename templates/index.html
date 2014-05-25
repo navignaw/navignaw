@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="/static/css/style.css"/>
   </head>
 
-  <body>
+  <body ng-controller="HomeCtrl">
+
+    <!-- Jumbotron (title) -->
     <div class="jumbotron">
       <div class="container">
         <h1>ivan wang.me</h1>
@@ -22,13 +24,47 @@
       </div>
     </div>
 
-    <div class="container">
-      <ul class="menu">
-        <li><a href="#/about">About</a></li>
-        <li><a href="#/games">Games</a></li>
-      </ul>
+    <!-- TODO: floating About Me here, complete with links to resume, github, linkedIn -->
 
-      <div ng-view></div>
+    <!-- TODO: Outer carousel wrapper -->
+    <div id="outer-carousel" class="carousel slide" data-interval="0" data-wrap="false">
+      <div class="carousel-inner">
+
+        <!-- First carousel slide: project links -->
+        <div class="item active">
+          <div class="container">
+            
+            <div class="row">
+              <div class="project-slide red-edge col-lg-10 col-lg-offset2">
+                <h3>Web Development</h3>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="project-slide green-edge col-lg-10 col-lg-offset2">
+                <h3>Mobile Apps</h3>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="project-slide orange-edge col-lg-10 col-lg-offset2">
+                <h3>Game Development</h3>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Second carousel slide: content -->
+        <div class="item">
+          <div class="container">
+            <div ng-view></div>
+            
+            <button class="btn" ng-click="carouselPrev()">Back</button>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>

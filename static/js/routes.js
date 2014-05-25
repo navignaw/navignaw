@@ -13,6 +13,17 @@ angular.module('navignaw.routes', ['ngRoute'])
          controller: 'AboutCtrl'
       })
 
+      .when('/web', {
+         templateUrl: 'partials/web.html',
+         controller: 'WebCtrl'
+      })
+
+
+      .when('/mobile', {
+         templateUrl: 'partials/mobile.html',
+         controller: 'MobileCtrl'
+      })
+
       .when('/games', {
          templateUrl: 'partials/games.html',
          controller: 'GamesCtrl'

@@ -26,3 +26,34 @@ body {
 .grey {
   color: #d7e0ee;
 }
+
+.red-edge {
+  border-left-color: #d32525;
+}
+.green-edge {
+  border-left-color: #1e9e61;
+}
+.blue-edge {
+  border-left-color: #3f9be6;
+}
+.orange-edge {
+  border-left-color: #d3772f;
+}
+.yellow-edge {
+  border-left-color: #fce200;
+}
+
+.project-slide {
+  transition: margin-left 0.5s;
+  background-color: #d7e0ee;
+  border-left-width: 12px;
+  border-left-style: solid;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  margin-top: 20px;
+  padding: 15px;
+}
+
+.project-slide:hover {
+  margin-left: 30px;
+}
