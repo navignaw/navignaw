@@ -16,7 +16,7 @@ angular.module('navignaw.controllers', [])
 
         // If switching to new page, slide carousel
         var checkPath = function() {
-            if ($location.path().substring(0, 9) === '/projects')
+            if ($location.path().substring(0, 9) === '/projects' || $location.path() === '/404')
                 $scope.carouselNext();
             else
                 $scope.carouselPrev();
@@ -30,17 +30,15 @@ angular.module('navignaw.controllers', [])
         checkPath();
     }])
 
-    .controller('AboutCtrl', ['$scope', function($scope) {
-
-    }])
-
     .controller('ProjectsCtrl', ['$scope', 'projects', function($scope, projects) {
         $scope.projects = projects;
     }])
 
     .controller('ProjectCtrl', ['$scope', '$routeParams', '$filter', 'projects', function($scope, $routeParams, $filter, projects) {
         var projects = $filter('filter')(projects, {id: $routeParams.projectId}, true);
-        $scope.project = projects.length ? projects[0] : null;
-        console.log($scope.project);
+        if (projects.length)
+            $scope.project = projects[0];
+        else
+            $scope.$parent.go('/404');
     }])
 ;

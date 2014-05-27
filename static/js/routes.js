@@ -8,14 +8,13 @@ angular.module('navignaw.routes', ['ngRoute'])
          template: '',
       })
 
-      .when('/about', {
-         templateUrl: 'partials/about.html',
-         controller: 'AboutCtrl'
-      })
-
       .when('/projects/:projectId', {
          templateUrl: 'partials/project.html',
          controller: 'ProjectCtrl'
+      })
+
+      .when('/404', {
+         templateUrl: 'partials/404.html'
       })
 
       .otherwise({
