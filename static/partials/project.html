@@ -5,14 +5,25 @@
 
 <h4>{{project.date}}</h4>
 
-<div class="screenshots" ng-show="project.screenshots.length">
-  <!-- Insert screeenshots here -->
+<p>{{project.description}}</p>
+
+<p>{{project.note}}</p>
+
+<!-- Screenshots -->
+<div class="screenshots row" ng-show="project.screenshots.length">
+  <div class="col-lg-10 col-lg-offset-1">
+    <h4>Screenshots</h4>
+    <div class="row" ng-repeat="row in project.screenshots | split:3">
+      <div class="col-md-4" ng-repeat="image in row">
+        <!-- TODO: make image modal carousel -->
+        <a class="thumbnail">
+          <img ng-src="{{image.url}}" alt="{{image.caption}}"/>
+        </a>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="embedded-content" ng-show="project.embed">
   <!-- Insert embedded swfs, videos, etc. -->
 </div>
-
-<p>{{project.description}}</p>
-
-<p>{{project.note}}</p>

@@ -45,40 +45,43 @@
           <div class="container" ng-controller="ProjectsCtrl">
             
             <div class="row">
-              <div class="project-slide red-edge col-lg-10 col-lg-offset2">
+              <div class="project-slide red-edge col-lg-11">
                 <h3>Web Development</h3>
 
                 <div class="col-lg-11">
-                  <div class="project-banner" ng-repeat="project in projects | filter:{type: 'web'}:true"
+                  <div class="thumbnail project-banner non-select" ng-repeat="project in projects | filter:{type: 'web'}:true"
                        ng-click="go('/projects/' + project.id)">
-                    <h4 class="project-caption">{{project.name}}</h4>
+                    <img ng-src="{{project.banner || defaultBanner}}"/>
+                    <h4 class="project-caption" ng-hide="project.banner">{{project.name}}</h4>
                   </div>
                 </div>
               </div>
             </div>
 
             <div class="row">
-              <div class="project-slide green-edge col-lg-10 col-lg-offset2">
+              <div class="project-slide green-edge col-lg-11">
                 <h3>Mobile Apps</h3>
 
                 <div class="col-lg-11">
-                  <div class="project-banner" ng-repeat="project in projects | filter:{type: 'mobile'}:true"
+                  <a class="thumbnail project-banner non-select" ng-repeat="project in projects | filter:{type: 'mobile'}:true"
                        ng-click="go('/projects/' + project.id)">
-                    <h4 class="project-caption">{{project.name}}</h4>
-                  </div>
+                    <img ng-src="{{project.banner || defaultBanner}}"/>
+                    <h4 class="project-caption" ng-hide="project.banner">{{project.name}}</h4>
+                  </a>
                 </div>
               </div>
             </div>
 
             <div class="row">
-              <div class="project-slide orange-edge col-lg-10 col-lg-offset2">
+              <div class="project-slide orange-edge col-lg-11">
                 <h3>Game Development</h3>
 
                 <div class="col-lg-11">
-                  <div class="project-banner" ng-repeat="project in projects | filter:{type: 'game'}:true"
+                  <a class="thumbnail project-banner non-select" ng-repeat="project in projects | filter:{type: 'game'}:true"
                        ng-click="go('/projects/' + project.id)">
-                    <h4 class="project-caption">{{project.name}}</h4>
-                  </div>
+                    <img ng-src="{{project.banner || defaultBanner}}"/>
+                    <h4 class="project-caption" ng-hide="project.banner">{{project.name}}</h4>
+                  </a>
                 </div>
               </div>
             </div>
@@ -88,7 +91,7 @@
 
         <!-- Second carousel slide: content -->
         <div class="item">
-          <div class="container">
+          <div id="project-container" class="container">
             <div ng-view></div>
             <br/>
             <button class="btn" ng-click="go('/')">&#171; Back</button>

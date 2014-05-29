@@ -7,7 +7,7 @@ body {
   background-color: #3f9be6;
 }
 
-.jumbotron h1, .jumbotron h2 {
+.jumbotron h1 {
   color: white;
 }
 
@@ -54,6 +54,11 @@ body {
   text-align: center;
 }
 
+#project-container {
+  min-height: 500px;
+  margin-bottom: 30px;
+}
+
 .project-slide {
   transition: margin-left 0.5s;
   border-left-width: 12px;
@@ -83,8 +88,9 @@ body {
 
 .project-banner {
   transition: background-color 0.5s;
-  height: 100px;
-  width: 200px;
+  background-color: #d7e0ee;
+  height: 110px;
+  width: 280px;
   display: inline-block;
   border: #c4cfe0 1px solid;
   text-align: center;
@@ -92,8 +98,23 @@ body {
 }
 .project-banner:hover {
   background-color: #c4cfe0;
+  text-decoration: none;
+}
+.project-banner > img {
+  height: 100px;
+  width: 275px;
 }
 
 .project-caption {
-  margin-top: 60px;
+  margin-top: -40px;
+  color: black;
+}
+
+.non-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
