@@ -5,12 +5,12 @@
 
 <h4>{{project.date}}</h4>
 
-<p>{{project.description}}</p>
+<p ng-bind-html="project.description"></p>
 
 <p>{{project.note}}</p>
 
 <!-- Screenshots -->
-<div class="screenshots row" ng-show="project.screenshots.length">
+<div class="screenshots row" ng-if="project.screenshots.length">
   <div class="col-lg-10 col-lg-offset-1">
     <h4>Screenshots</h4>
     <div class="row" ng-repeat="row in project.screenshots | split:3">
@@ -24,6 +24,7 @@
   </div>
 </div>
 
-<div class="embedded-content" ng-show="project.embed">
-  <!-- Insert embedded swfs, videos, etc. -->
+<div class="embedded-content center-block" ng-if="project.embed" ng-style="{width: project.embed.width}">
+  <!-- TODO: add Play button that opens embedded file in modal -->
+  <embed width="{{project.embed.width}}" height="{{project.embed.height}}" ng-src="{{project.embed.src}}"></embed>
 </div>

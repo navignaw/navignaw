@@ -37,10 +37,12 @@ angular.module('navignaw.controllers', [])
         $scope.defaultBanner = "static/assets/banner.png";
     }])
 
-    .controller('ProjectCtrl', ['$scope', '$routeParams', '$filter', 'projects', function($scope, $routeParams, $filter, projects) {
+    .controller('ProjectCtrl', ['$scope', '$routeParams', '$filter', '$sce', 'projects', function($scope, $routeParams, $filter, $sce, projects) {
         var projects = $filter('filter')(projects, {id: $routeParams.projectId}, true);
-        if (projects.length)
+        if (projects.length) {
             $scope.project = projects[0];
+            $scope.project.description = $sce.trustAsHtml($scope.project.description);
+        }
         else
             $scope.$parent.go('/404');
     }])

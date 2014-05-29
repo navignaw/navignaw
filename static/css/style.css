@@ -47,7 +47,6 @@ body {
 }
 
 #about {
-  float: right;
   margin-top: -220px;
   border-radius: 12px;
   background-color: #d7e0ee;
@@ -117,4 +116,8 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.embedded-content {
+  width: 100%;
 }

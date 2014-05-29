@@ -8,7 +8,7 @@ angular.module('navignaw.projects', [])
     	/* Webapps */
     	{
             name: "CMU C#",
-            id: "csharp",
+            id: "cmucsharp",
             date: "Summer 2013",
             url: "https://www.cmucsharp.com",
             description: "Interactive website for college a cappella group.",
@@ -17,7 +17,7 @@ angular.module('navignaw.projects', [])
             screenshots: [
                 {url: "static/assets/cmucsharp/logo.png", caption: "Logo"}
             ],
-            embed: false,
+            embed: null,
             type: "web"
         },
         {
@@ -31,7 +31,7 @@ angular.module('navignaw.projects', [])
             screenshots: [
                 {url: "static/assets/surfboard/surfboard.png", caption: "Surfboard"}
             ],
-            embed: false,
+            embed: null,
             type: "web"
         },
         {
@@ -39,26 +39,26 @@ angular.module('navignaw.projects', [])
             id: "hacknbash",
             date: "Feb 2014",
             url: "https://hacknbash.herokuapp.com",
-            description: "Explore a remote directory as a robot in this cute gamified FTP webapp client. Features the ability to 'rm' and 'cat' (remove and print) files, as well as change directories.",
+            description: "Explore a remote directory as a robot in this cute gamified FTP client webapp. Features the ability to <kbd>rm</kbd> and <kbd>cat</kbd> (remove and print) files, as well as <kbd>cd</kbd> (change directories).",
             note: "Developed with Flask and CreateJS for a 24-hour hackathon, TartanHacks; winner of Capital One sponsor prize.",
             banner: "static/assets/hacknbash/banner.png",
             screenshots: [
                 {url: "static/assets/hacknbash/game.png", caption: "Game Map"},
                 {url: "static/assets/hacknbash/cd.png", caption: "Changing Directories"}
             ],
-            embed: false,
+            embed: null,
             type: "web"
         },
         {
             name: "navignaw",
             id: "navignaw",
             date: "May 2014",
-            url: "https://github.com/navignaw/navignaw",
-            description: "Online software and game development portfolio, i.e. this site! Open-sourced on github (link above).",
+            url: null,
+            description: "Online software and game development portfolio, i.e. this site! Open-sourced on <a href='https://github.com/navignaw/navignaw' target='_blank'>github</a>.",
             note: "Built with Flask and AngularJS.",
             banner: "",
             screenshots: [],
-            embed: false,
+            embed: null,
             type: "web"
         },
 
@@ -79,7 +79,7 @@ angular.module('navignaw.projects', [])
                 {url: "static/assets/nommit/venmo.png", caption: "Venmo Payment"},
                 {url: "static/assets/nommit/text.png", caption: "Text Notification"}
             ],
-            embed: false,
+            embed: null,
             type: "mobile"
         },
         {
@@ -87,7 +87,7 @@ angular.module('navignaw.projects', [])
             id: "spontaneity",
             date: "Jan 2014",
             url: "http://mhackswinter2014.challengepost.com/submissions/20243-spontaneity",
-            description: "The spontaneous hangout app, Spontaneity suggests nine categories of activities to participate in, including nearby parties, exercise spots, and even baking recipes from Pinterest. Through the creation of Facebook events to text-message notifications to nearby users, Spontaneity aims to liven up an otherwise boring day.",
+            description: "The spontaneous hangout app, <em>Spontaneity</em> suggests nine categories of activities to participate in, including nearby parties, exercise spots, and even baking recipes from Pinterest. Through the creation of Facebook events to text-message notifications to nearby users, Spontaneity aims to liven up an otherwise boring day.",
 			note: "Developed in 36 hours during MHacks; winner of Yahoo's Best Mobile App.",
             banner: "static/assets/spontaneity/banner.png",
             screenshots: [
@@ -97,7 +97,7 @@ angular.module('navignaw.projects', [])
                 {url: "static/assets/spontaneity/create.png", caption: "Create an Event"},
                 {url: "static/assets/spontaneity/facebook.png", caption: "Facebook Events"}
             ],
-            embed: false,
+            embed: null,
             type: "mobile"
         },
         {
@@ -105,8 +105,8 @@ angular.module('navignaw.projects', [])
             id: "edugames",
             date: "Feb 2014",
             url: "http://pennapps2014s.challengepost.com/submissions/20856-edugames-create-educational-games-with-0-programming-knowledge",
-            description: "EduGames allows teachers to create engaging interactive games tailored to their curriculum with no programming knowledge. Features a webapp where teachers can choose from existing game templates and fill in questions, as well as a native iPad app where students can log in and play customized games created by their teachers.",
-            note: "Coded with love during PennApps (Valentines' Edition); winner of IndieGogo prize. Visit https://edugames.firebaseapp.com!",
+            description: "<em>EduGames</em> allows teachers to create engaging interactive games tailored to their curriculum with no programming knowledge. Features a <a href='https://edugames.firebaseapp.com' target='_blank'>webapp</a> where teachers can choose from existing game templates and fill in questions, as well as a native iPad app where students can log in and play customized games created by their teachers.",
+            note: "Coded with love during PennApps (Valentines' Edition); winner of IndieGogo prize.",
             banner: "static/assets/edugames/banner.png",
             screenshots: [
                 {url: "static/assets/edugames/app.png", caption: "Main Screen"},
@@ -116,7 +116,7 @@ angular.module('navignaw.projects', [])
                 {url: "static/assets/edugames/conqueror.png", caption: "Conqueror Minigame"},
                 {url: "static/assets/edugames/millionaire.png", caption: "Who Wants to Be a Millionaire"}
             ],
-            embed: false,
+            embed: null,
             type: "mobile"
         },
 
@@ -136,7 +136,7 @@ angular.module('navignaw.projects', [])
                 {url: "static/assets/omnisia/blitz.png", caption: "Battle Blitz"},
                 {url: "static/assets/omnisia/sewers.png", caption: "Puzzle in the Sewers"}
             ],
-            embed: false,
+            embed: null,
             type: "game"
         },
         {
@@ -144,7 +144,7 @@ angular.module('navignaw.projects', [])
             id: "scavenger",
             date: "Summer 2011 - present",
             url: "http://www.hbgames.org/forums/viewtopic.php?p=852052",
-            description: "Scavenger is a 2D puzzle-action-adventure game, a la the Legend of Zelda. Explore a vast pixel-perfect world equipped with tools and the unique ability to visualize the past.",
+            description: "<em>Scavenger</em> is a 2D puzzle-action-adventure game, a la the Legend of Zelda. Explore a vast pixel-perfect world equipped with tools and the unique ability to visualize the past.",
             note: "Created in RPG Maker XP and coded in Ruby. Scavenger is currently in development!",
             banner: "static/assets/scavenger/banner.png",
             screenshots: [
@@ -156,7 +156,7 @@ angular.module('navignaw.projects', [])
                 {url: "static/assets/scavenger/mines2.png", caption: "Golmar Mines: Past"},
                 {url: "static/assets/scavenger/mines3.png", caption: "Chucking Bombs"}
             ],
-            embed: false,
+            embed: null,
             type: "game"
         },
         {
@@ -164,11 +164,15 @@ angular.module('navignaw.projects', [])
             id: "newt",
             date: "Dec 2012",
             url: "http://www.hbgames.org/forums/viewtopic.php?f=299&t=76684",
-            description: "Explore a morbid, alien world as a small, innocent NEWT. In the empty labs of the FACILITY, escaping is not as simple as finding the key to the lock. With lasers, keypads, and fingerprint scanners, to say the least, there will be countless challenges facing your freedom-seeking amphibian. Can you creatively solve your way through five difficult trials, realize your role in the sinister plot of a few evil-genius human scientists, and escape?",
+            description: "Explore a morbid, alien world as a small, innocent <small>NEWT</small>. In the empty labs of the <small>FACILITY</small>, escaping is not as simple as finding the key to the lock. With lasers, keypads, and fingerprint scanners, to say the least, there will be countless challenges facing your freedom-seeking amphibian. Can you creatively solve your way through five difficult trials, realize your role in the sinister plot of a few evil-genius human scientists, and escape?",
 			note: "Submission for the HBGames.org 5-Year Anniversary Contest; built in Adobe Flash and ActionScript.",
             banner: "static/assets/newt/banner.png",
             screenshots: [],
-            embed: false,
+            embed: {
+                src: "http://hbgames.org/games/flash/NEWT.swf",
+                width: 640,
+                height: 480
+            },
             type: "game"
         },
         {
@@ -186,7 +190,11 @@ angular.module('navignaw.projects', [])
                 {url: "static/assets/retrograde/shrooms.png", caption: "Aerial Platforming"},
                 {url: "static/assets/retrograde/walljump.png", caption: "Wall Jumping"}
             ],
-            embed: false,
+            embed: null, /*{
+                src: "static/assets/retrograde/demo.swf",
+                width: 640,
+                height: 480
+            },*/
             type: "game"
         },
         {
@@ -203,7 +211,7 @@ angular.module('navignaw.projects', [])
                 {url: "static/assets/illuminate/graffiti.jpg", caption: "Graffiti on the Wall"},
                 {url: "static/assets/illuminate/fire.jpg", caption: "Fire and Flames"},
             ],
-            embed: false,
+            embed: null,
             type: "game"
         }
 
