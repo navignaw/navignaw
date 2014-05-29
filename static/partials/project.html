@@ -24,7 +24,7 @@
   </div>
 </div>
 
-<div class="embedded-content center-block" ng-if="project.embed" ng-style="{width: project.embed.width}">
+<div class="embedded-content center-block" ng-if="project.embed" ng-style="{width: project.embed.width}"
+     ng-bind-html="project.embed.html">
   <!-- TODO: add Play button that opens embedded file in modal -->
-  <embed width="{{project.embed.width}}" height="{{project.embed.height}}" ng-src="{{project.embed.src}}"></embed>
 </div>

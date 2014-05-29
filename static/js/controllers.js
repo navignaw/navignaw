@@ -15,8 +15,8 @@ angular.module('navignaw.controllers', [])
         }
 
         // If switching to new page, slide carousel
-        var checkPath = function(path) {
-            if (!path) path = $location.path();
+        var checkPath = function() {
+            var path = $location.path();
 
             if (path.substring(0, 9) === '/projects' || path === '/404')
                 $scope.carouselNext();
@@ -29,6 +29,7 @@ angular.module('navignaw.controllers', [])
             checkPath(path);
         };
 
+        $scope.$on('$locationChangeStart', checkPath);
         checkPath();
     }])
 
@@ -42,6 +43,11 @@ angular.module('navignaw.controllers', [])
         if (projects.length) {
             $scope.project = projects[0];
             $scope.project.description = $sce.trustAsHtml($scope.project.description);
+
+            if ($scope.project.embed) {
+                var embedHtml = "<embed width='" + $scope.project.embed.width + "' height='" + $scope.project.embed.height + "' src='" + $scope.project.embed.src + "'></embed>";
+                $scope.project.embed.html = $sce.trustAsHtml(embedHtml);
+            }
         }
         else
             $scope.$parent.go('/404');

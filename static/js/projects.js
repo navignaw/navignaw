@@ -171,7 +171,8 @@ angular.module('navignaw.projects', [])
             embed: {
                 src: "http://hbgames.org/games/flash/NEWT.swf",
                 width: 640,
-                height: 480
+                height: 480,
+                html: ""
             },
             type: "game"
         },
@@ -193,7 +194,8 @@ angular.module('navignaw.projects', [])
             embed: null, /*{
                 src: "static/assets/retrograde/demo.swf",
                 width: 640,
-                height: 480
+                height: 480,
+                html: ""
             },*/
             type: "game"
         },
