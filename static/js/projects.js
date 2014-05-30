@@ -191,12 +191,12 @@ angular.module('navignaw.projects', [])
                 {url: "static/assets/retrograde/shrooms.png", caption: "Aerial Platforming"},
                 {url: "static/assets/retrograde/walljump.png", caption: "Wall Jumping"}
             ],
-            embed: null, /*{
-                src: "static/assets/retrograde/demo.swf",
+            embed: {
+                src: "http://stage.gamecreation.org/retrograde/Retrograde.swf",
                 width: 640,
                 height: 480,
                 html: ""
-            },*/
+            },
             type: "game"
         },
         {

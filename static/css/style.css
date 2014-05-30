@@ -121,3 +121,21 @@ body {
 .embedded-content {
   width: 100%;
 }
+
+.screenshots .thumbnail img {
+  cursor: pointer;
+}
+
+#screenshot-modal .modal-content {
+  background-color: #c4cfe0;
+}
+#screenshot-modal .modal-title {
+  text-align: center;
+}
+#screenshot-modal .modal-header {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+#screenshot-carousel .carousel-control {
+  cursor: pointer;
+}

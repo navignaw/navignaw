@@ -15,10 +15,48 @@
     <h4>Screenshots</h4>
     <div class="row" ng-repeat="row in project.screenshots | split:3">
       <div class="col-md-4" ng-repeat="image in row">
-        <!-- TODO: make image modal carousel -->
-        <a class="thumbnail">
+        <a data-toggle="modal" data-target="#screenshot-modal" class="thumbnail" ng-click="openCarousel($index)">
           <img ng-src="{{image.url}}" alt="{{image.caption}}"/>
         </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Screenshot modal carousel -->
+<div class="modal fade" id="screenshot-modal" ng-if="project.screenshots.length">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Screenshots</h4>
+      </div>
+
+      <div class="modal-body">
+        <div id="screenshot-carousel" class="carousel slide" data-interval="0" data-wrap="false">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li ng-repeat="image in project.screenshots" data-target="#screenshot-carousel" data-slide-to="{{$index}}" ng-class="{active: activeCarousel === $index}"></li>
+          </ol>
+
+          <!-- Image slides -->
+          <div class="carousel-inner">
+            <div class="item" ng-repeat="image in project.screenshots" ng-class="{active: activeCarousel === $index}">
+              <img class="center-block" ng-src="{{image.url}}" alt="{{image.caption}}">
+              <div class="carousel-caption">
+                <h4>{{image.caption}}</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control non-select" data-target="#screenshot-carousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control non-select" data-target="#screenshot-carousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
       </div>
     </div>
   </div>
