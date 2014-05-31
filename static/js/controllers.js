@@ -4,7 +4,7 @@
 
 angular.module('navignaw.controllers', [])
     .controller('HomeCtrl', ['$scope', '$location', function($scope, $location) {
-        var carousel = $("#outer-carousel");
+        var carousel = $('#outer-carousel');
 
         // If switching to new page, slide carousel
         var checkPath = function() {
@@ -44,23 +44,18 @@ angular.module('navignaw.controllers', [])
             var embedHtml = "<embed width='" + $scope.project.embed.width + "' height='" + $scope.project.embed.height + "' src='" + $scope.project.embed.src + "'></embed>";
             $scope.project.embed.html = $sce.trustAsHtml(embedHtml);
         }
-        
-        var modal = $("#screenshot-modal");
-        var carousel = $("#screenshot-carousel");
 
-        $scope.activeCarousel = 0;
-
-        $scope.openCarousel = function(index) {
-            $scope.activeCarousel = index;
-            carousel.carousel(index);
-            console.log(carousel);
+        $scope.slideTo = function(index) {
+            $scope.project.screenshots[index].active = true;
+            // TODO: breaks prev/next arrows! FIX
         }
 
-        carousel.on('slide.bs.carousel', function() {
-            console.log("whee");
-            console.log(event);
-            console.log(attr);
-        });
+        var setFocusToEmbed = function() {
+            $('.embedded-content > embed').focus();
+        }
+        $scope.focus = function() {
+            setTimeout(setFocusToEmbed, 500);
+        }
 
     }])
 ;

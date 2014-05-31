@@ -1,6 +1,10 @@
 <h2>
   {{project.name}}
   <small><a ng-show="project.url" ng-href={{project.url}} target="_blank">(<span class="glyphicon glyphicon-new-window"></span>)</a></small>
+
+  <button class="btn btn-large btn-info" id="play-btn" data-toggle="modal" data-target="#embed-modal" ng-if="project.embed" ng-click="focus()">
+    <span class="glyphicon glyphicon-play"></span> Play now!
+  </button>
 </h2>
 
 <h4>{{project.date}}</h4>
@@ -15,7 +19,7 @@
     <h4>Screenshots</h4>
     <div class="row" ng-repeat="row in project.screenshots | split:3">
       <div class="col-md-4" ng-repeat="image in row">
-        <a data-toggle="modal" data-target="#screenshot-modal" class="thumbnail" ng-click="openCarousel($index)">
+        <a data-toggle="modal" data-target="#screenshot-modal" class="thumbnail" ng-click="slideTo($index)">
           <img ng-src="{{image.url}}" alt="{{image.caption}}"/>
         </a>
       </div>
@@ -23,46 +27,42 @@
   </div>
 </div>
 
+
 <!-- Screenshot modal carousel -->
-<div class="modal fade" id="screenshot-modal" ng-if="project.screenshots.length">
+<div class="modal fade" id="screenshot-modal" ng-if="project.screenshots.length" aria-labelledby="screenshot-modal-label" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title">Screenshots</h4>
+        <h4 class="modal-title" id="screenshot-modal-label">Screenshots</h4>
       </div>
 
       <div class="modal-body">
-        <div id="screenshot-carousel" class="carousel slide" data-interval="0" data-wrap="false">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li ng-repeat="image in project.screenshots" data-target="#screenshot-carousel" data-slide-to="{{$index}}" ng-class="{active: activeCarousel === $index}"></li>
-          </ol>
-
-          <!-- Image slides -->
-          <div class="carousel-inner">
-            <div class="item" ng-repeat="image in project.screenshots" ng-class="{active: activeCarousel === $index}">
-              <img class="center-block" ng-src="{{image.url}}" alt="{{image.caption}}">
-              <div class="carousel-caption">
-                <h4>{{image.caption}}</h4>
-              </div>
+        <carousel interval="-1" id="screenshot-carousel">
+          <slide ng-repeat="image in project.screenshots" active="image.active">
+            <img class="center-block" ng-src="{{image.url}}" alt="{{image.caption}}">
+            <div class="carousel-caption">
+              <h4>{{image.caption}}</h4>
             </div>
-          </div>
-
-          <!-- Controls -->
-          <a class="left carousel-control non-select" data-target="#screenshot-carousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-          </a>
-          <a class="right carousel-control non-select" data-target="#screenshot-carousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
-        </div>
+          </slide>
+        </carousel>
       </div>
     </div>
   </div>
 </div>
 
-<div class="embedded-content center-block" ng-if="project.embed" ng-style="{width: project.embed.width}"
-     ng-bind-html="project.embed.html">
-  <!-- TODO: add Play button that opens embedded file in modal -->
+<!-- Embedded content modal -->
+<div class="modal fade" id="embed-modal" ng-if="project.embed" aria-labelledby="embed-modal-label" aria-hidden="true" data-keyboard="false">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="embed-modal-label">{{project.name}}</h4>
+      </div>
+
+      <div class="modal-body">
+        <div class="embedded-content center-block" ng-style="{width: project.embed.width}" ng-bind-html="project.embed.html"></div>
+      </div>
+    </div>
+  </div>
 </div>

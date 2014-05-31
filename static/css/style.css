@@ -46,6 +46,23 @@ body {
   border-left-color: #fce200;
 }
 
+.red-bg {
+  background-color: #d32525;
+}
+.green-bg {
+  background-color: #1e9e61;
+}
+.blue-bg {
+  background-color: #3f9be6;
+}
+.orange-bg {
+  background-color: #d3772f;
+}
+.yellow-bg {
+  background-color: #fce200;
+}
+
+
 #about {
   margin-top: -220px;
   border-radius: 12px;
@@ -109,6 +126,27 @@ body {
   color: black;
 }
 
+#play-btn {
+  margin-left: 30px;
+}
+
+
+/* Bootstrap overwrite */
+.modal .modal-content {
+  background-color: #c4cfe0;
+}
+.modal .modal-title {
+  text-align: center;
+}
+.modal .modal-header {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+a.thumbnail, .carousel-control {
+  cursor: pointer;
+}
+
 .non-select {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -116,26 +154,4 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-
-.embedded-content {
-  width: 100%;
-}
-
-.screenshots .thumbnail img {
-  cursor: pointer;
-}
-
-#screenshot-modal .modal-content {
-  background-color: #c4cfe0;
-}
-#screenshot-modal .modal-title {
-  text-align: center;
-}
-#screenshot-modal .modal-header {
-  border-bottom: none;
-  padding-bottom: 0;
-}
-#screenshot-carousel .carousel-control {
-  cursor: pointer;
 }
