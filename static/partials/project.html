@@ -27,6 +27,8 @@
   </div>
 </div>
 
+<!-- TODO: Add rating, comment field -->
+
 
 <!-- Screenshot modal carousel -->
 <div class="modal fade" id="screenshot-modal" ng-if="project.screenshots.length" aria-labelledby="screenshot-modal-label" aria-hidden="true">
@@ -53,7 +55,7 @@
 
 <!-- Embedded content modal -->
 <div class="modal fade" id="embed-modal" ng-if="project.embed" aria-labelledby="embed-modal-label" aria-hidden="true" data-keyboard="false">
-  <div class="modal-dialog modal-lg">
+  <div class="modal-dialog" ng-style="{width: project.embed.width + 40}">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>

@@ -29,8 +29,8 @@
       <div class="row">
         <div id="about" class="col-md-4 pull-right">
           <h3>About</h3>
-          <!-- TODO: replace with icons and tooltip? -->
-          <h5><a href="https://www.dropbox.com/s/iifhkifxgtbivm0/Resume_IvanWang.pdf">Resume</a> | <a href="https://github.com/navignaw/">GitHub</a> | <a href="https://www.linkedin.com/in/navignaw/">LinkedIn</a> | <a href="mailto:icw@cmu.edu">Email</a></h5>
+
+          <h4><a href="https://www.dropbox.com/s/iifhkifxgtbivm0/Resume_IvanWang.pdf" tooltip="Resume"><span class="glyphicon glyphicon-bookmark"></span></a> | <a href="https://github.com/navignaw/" tooltip="GitHub"><img class="mark" src="static/assets/github-mark.png"/></a> | <a href="https://www.linkedin.com/in/navignaw/" tooltip="LinkedIn"><img class="mark" src="static/assets/linkedin-mark.png"/></a> | <a href="mailto:icw@cmu.edu" tooltip="Email"><span class="glyphicon glyphicon-envelope"></span></a></h4>
           
           <p>Student by day, hacker by night, Ivan is a software and game developer studying computer science at Carnegie Mellon University, seeking to consume the next big coding challenge or summer internship.</p>
         </div>
@@ -54,6 +54,8 @@
                        ng-click="go('/projects/' + project.id)">
                     <img ng-src="{{project.banner || defaultBanner}}"/>
                     <h4 class="project-caption" ng-hide="project.banner">{{project.name}}</h4>
+
+                    <!-- TODO: Add hovering labels (top-right) indicating "New" or "Demo" or "Play Now!" -->
                   </div>
                 </div>
               </div>
@@ -64,11 +66,11 @@
                 <h3>Mobile Apps</h3>
 
                 <div class="col-lg-11">
-                  <a class="thumbnail project-banner non-select" ng-repeat="project in projects | filter:{type: 'mobile'}:true"
+                  <div class="thumbnail project-banner non-select" ng-repeat="project in projects | filter:{type: 'mobile'}:true"
                        ng-click="go('/projects/' + project.id)">
                     <img ng-src="{{project.banner || defaultBanner}}"/>
                     <h4 class="project-caption" ng-hide="project.banner">{{project.name}}</h4>
-                  </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -78,11 +80,11 @@
                 <h3>Game Development</h3>
 
                 <div class="col-lg-11">
-                  <a class="thumbnail project-banner non-select" ng-repeat="project in projects | filter:{type: 'game'}:true"
+                  <div class="thumbnail project-banner non-select" ng-repeat="project in projects | filter:{type: 'game'}:true"
                        ng-click="go('/projects/' + project.id)">
                     <img ng-src="{{project.banner || defaultBanner}}"/>
                     <h4 class="project-caption" ng-hide="project.banner">{{project.name}}</h4>
-                  </a>
+                  </div>
                 </div>
               </div>
             </div>

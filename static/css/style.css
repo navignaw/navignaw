@@ -64,10 +64,19 @@ body {
 
 
 #about {
-  margin-top: -220px;
+  margin-top: -240px;
   border-radius: 12px;
   background-color: #d7e0ee;
   text-align: center;
+}
+
+#about a {
+  color: black;
+}
+img.mark {
+  margin-bottom: 5px;
+  height: 20px;
+  width: 20px;
 }
 
 #project-container {
@@ -130,6 +139,11 @@ body {
   margin-left: 30px;
 }
 
+.screenshots .thumbnail {
+  max-height: 250px;
+  overflow-y: hidden;
+}
+
 
 /* Bootstrap overwrite */
 .modal .modal-content {
@@ -143,7 +157,7 @@ body {
   padding-bottom: 0;
 }
 
-a.thumbnail, .carousel-control {
+.thumbnail, .carousel-control {
   cursor: pointer;
 }
 
