@@ -1,6 +1,12 @@
 
 body {
   background-color: #c4cfe0;
+  font-family: 'Lato', 'Helvetica', sans-serif;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Arvo', serif;
 }
 
 .jumbotron {
@@ -21,7 +27,7 @@ body {
   color: #3f9be6;
 }
 .orange {
-  color: #d3772f;
+  color: #d4a01a;
 }
 .yellow {
   color: #fce200;
@@ -40,7 +46,7 @@ body {
   border-left-color: #3f9be6;
 }
 .orange-edge {
-  border-left-color: #d3772f;
+  border-left-color: #d4a01a;
 }
 .yellow-edge {
   border-left-color: #fce200;
@@ -56,7 +62,7 @@ body {
   background-color: #3f9be6;
 }
 .orange-bg {
-  background-color: #d3772f;
+  background-color: #d4a01a;
 }
 .yellow-bg {
   background-color: #fce200;
