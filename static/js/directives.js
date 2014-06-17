@@ -1,7 +1,6 @@
 'use strict';
 
 /* Directives */
-
 angular.module('navignaw.directives', [])
 
   /*.directive('appVersion', ['version', function(version) {
