@@ -3,7 +3,7 @@
 /* Controllers */
 
 angular.module('navignaw.controllers', [])
-    .controller('HomeCtrl', ['$scope', '$location', function($scope, $location) {
+    .controller('HomeCtrl', ['$scope', '$location', 'Analytics', function($scope, $location, Analytics) {
         var aboutPopover = $('#about');
         var carousel = $('#outer-carousel');
 
@@ -19,6 +19,7 @@ angular.module('navignaw.controllers', [])
                 carousel.carousel('prev');
         }
 
+        // Location and routing logic
         $scope.go = function(path) {
             $location.path(path);
             checkPath(path);
@@ -26,6 +27,9 @@ angular.module('navignaw.controllers', [])
 
         $scope.$on('$locationChangeStart', checkPath);
         checkPath();
+
+        // Analytics code
+        $scope.analytics = Analytics.events;
     }])
 
     .controller('ProjectsCtrl', ['$scope', '$filter', 'projects', function($scope, $filter, projects) {

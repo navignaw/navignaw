@@ -32,7 +32,12 @@
           <div class="arrow"></div>
           <h3>About</h3>
 
-          <h4><a href="https://www.dropbox.com/s/iifhkifxgtbivm0/Resume_IvanWang.pdf" target="_blank" tooltip="Resume"><span class="glyphicon glyphicon-bookmark"></span></a> | <a href="https://github.com/navignaw/" target="_blank" tooltip="GitHub"><img class="mark" src="static/assets/github-mark.png"/></a> | <a href="https://www.linkedin.com/in/navignaw/" target="_blank" tooltip="LinkedIn"><img class="mark" src="static/assets/linkedin-mark.png"/></a> | <a href="mailto:icw@cmu.edu" tooltip="Email"><span class="glyphicon glyphicon-envelope"></span></a></h4>
+          <h4>
+            <a href="https://www.dropbox.com/s/iifhkifxgtbivm0/Resume_IvanWang.pdf" target="_blank" ng-click="analytics.link('resume')" tooltip="Resume"><span class="glyphicon glyphicon-bookmark"></span></a> |
+            <a href="https://github.com/navignaw/" target="_blank" ng-click="analytics.link('github')" tooltip="GitHub"><img class="mark" src="static/assets/github-mark.png"/></a> |
+            <a href="https://www.linkedin.com/in/navignaw/" target="_blank" ng-click="analytics.link('linkedin')" tooltip="LinkedIn"><img class="mark" src="static/assets/linkedin-mark.png"/></a> |
+            <a href="mailto:icw@cmu.edu" ng-click="analytics.link('email')" tooltip="Email"><span class="glyphicon glyphicon-envelope"></span></a>
+          </h4>
           
           <p>Student by day, hacker by night, Ivan is a software and game developer studying computer science at Carnegie Mellon University, seeking to consume the next big coding challenge or summer internship.</p>
         </div>
