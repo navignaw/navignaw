@@ -70,10 +70,28 @@ h1, h2, h3, h4, h5, h6 {
 
 
 #about {
-  margin-top: -240px;
+  top: 20px;
+  right: 40px;
+  left: initial;
+  display: block;
+  padding: 0 15px;
+  max-width: 420px;
   border-radius: 12px;
   background-color: #d7e0ee;
   text-align: center;
+  opacity: 0;
+}
+
+#about.popover.right > .arrow:after {
+  border-right-color: #d7e0ee;
+}
+
+@media (max-width: 992px) {
+  #about {
+    position: initial;
+    margin-top: -20px;
+    float: right;
+  }
 }
 
 #about a {

@@ -4,7 +4,10 @@
 
 angular.module('navignaw.controllers', [])
     .controller('HomeCtrl', ['$scope', '$location', function($scope, $location) {
+        var aboutPopover = $('#about');
         var carousel = $('#outer-carousel');
+
+        aboutPopover.fadeTo(1000, 1);
 
         // If switching to new page, slide carousel
         var checkPath = function() {
