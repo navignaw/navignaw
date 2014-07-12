@@ -6,6 +6,23 @@ angular.module('navignaw.projects', [])
     .value('projects', [
 
     	/* Webapps */
+        {
+            name: "Get Matched",
+            id: "getmatched",
+            date: "July 2014",
+            datetime: new Date(2014, 7, 1),
+            url: "http://get-matched.herokuapp.com/",
+            description: "A discovery platform for small business owners. This <a href='https://locu.com/' target='_blank'>Locu</a>/<a href='http://www.gotinder.com/' target='_blank'>Tinder</a> mashup allows businesses to find each other and network with mutual interest matching.",
+            note: "Built with Ruby on Rails. First place winner at 2014 GoDaddy Intern Hackathon!",
+            banner: "static/assets/getmatched/banner.png",
+            screenshots: [
+                {url: "static/assets/getmatched/home.png", caption: "Landing Page"},
+                {url: "static/assets/getmatched/profile.png", caption: "Profile"},
+                {url: "static/assets/getmatched/search.png", caption: "Searching for Businesses"}
+            ],
+            embed: null,
+            type: "web"
+        },
     	{
             name: "CMU C#",
             id: "cmucsharp",
