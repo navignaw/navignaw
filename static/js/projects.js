@@ -60,7 +60,7 @@ angular.module('navignaw.projects', [])
             url: null,
             description: "Online software and game development portfolio, i.e. this site! Open-sourced on <a href='https://github.com/navignaw/navignaw' target='_blank'>github</a>.",
             note: "Built with Flask and AngularJS.",
-            banner: "",
+            banner: "static/assets/navignaw/banner.png",
             screenshots: [],
             embed: null,
             type: "web"
