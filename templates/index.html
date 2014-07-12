@@ -28,7 +28,7 @@
     <!-- Floating About Me -->
     <div class="container">
       <div class="row">
-        <div id="about" class="col-md-4 popover right fade in">
+        <div id="about" class="col-md-4 popover right in">
           <div class="arrow"></div>
           <h3>About</h3>
 
@@ -57,7 +57,8 @@
                 <h3>Web Development</h3>
 
                 <div class="col-lg-11">
-                  <a class="thumbnail project-banner non-select" ng-repeat="project in projects | filter:{type: 'web'}:true"
+                  <a class="thumbnail project-banner non-select"
+                     ng-repeat="project in projects | filter:{type: 'web'}:true | orderBy:'datetime':true"
                      ng-click="go('/projects/' + project.id)">
                     <img ng-src="{{project.banner || defaultBanner}}"/>
                     <h4 class="project-caption" ng-hide="project.banner">{{project.name}}</h4>
@@ -73,7 +74,8 @@
                 <h3>Mobile Apps</h3>
 
                 <div class="col-lg-11">
-                  <a class="thumbnail project-banner non-select" ng-repeat="project in projects | filter:{type: 'mobile'}:true"
+                  <a class="thumbnail project-banner non-select"
+                     ng-repeat="project in projects | filter:{type: 'mobile'}:true | orderBy:'datetime':true"
                      ng-click="go('/projects/' + project.id)">
                     <img ng-src="{{project.banner || defaultBanner}}"/>
                     <h4 class="project-caption" ng-hide="project.banner">{{project.name}}</h4>
@@ -87,7 +89,8 @@
                 <h3>Game Development</h3>
 
                 <div class="col-lg-11">
-                  <a class="thumbnail project-banner non-select" ng-repeat="project in projects | filter:{type: 'game'}:true"
+                  <a class="thumbnail project-banner non-select"
+                     ng-repeat="project in projects | filter:{type: 'game'}:true | orderBy:'datetime':true"
                      ng-click="go('/projects/' + project.id)">
                     <img ng-src="{{project.banner || defaultBanner}}"/>
                     <h4 class="project-caption" ng-hide="project.banner">{{project.name}}</h4>
