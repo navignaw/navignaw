@@ -168,6 +168,10 @@ img.mark {
   overflow-y: hidden;
 }
 
+#screenshot-carousel .carousel-caption {
+  background-color: rgba(111, 111, 111, 0.5);
+  padding-top: 5px;
+}
 
 /* Bootstrap overwrite */
 .modal .modal-content {
