@@ -98,14 +98,16 @@ angular.module('navignaw.projects', [])
             description: "Connect the world through geocaching a virtual pet! Spire features the creation of a virtual pet that you can take pictures with and drop off in a location. As other users pick up your pet, track its progress around the world!",
             note: "Created with Parse and Objective-C for native iOS at Greylock Hackfest 2014.",
             collaborators: ["Lucy Guo", "Nive Jayasekar", "Jeffrey Zhang"],
-            banner: "",
+            banner: "static/assets/spire/banner.png",
             screenshots: [
-                /*{url: "static/assets/nommit/app.png", caption: "Main Screen"},
-                {url: "static/assets/nommit/restaurants.png", caption: "Restaurants Near You"},
-                {url: "static/assets/nommit/menu.png", caption: "Menu"},
-                {url: "static/assets/nommit/order.png", caption: "Order Confirmation"},
-                {url: "static/assets/nommit/venmo.png", caption: "Venmo Payment"},
-                {url: "static/assets/nommit/text.png", caption: "Text Notification"}*/
+                {url: "static/assets/spire/welcometospire.png", caption: "Main Screen"},
+                {url: "static/assets/spire/logintospire.png", caption: "Login Screen"},
+                {url: "static/assets/spire/nameyourpet.png", caption: "Naming your Pet"},
+                {url: "static/assets/spire/profile.png", caption: "User Profile"},
+                {url: "static/assets/spire/pet.png", caption: "Pet Profile"},
+                {url: "static/assets/spire/picturetaking.png", caption: "Taking a Picture"},
+                {url: "static/assets/spire/itemviewer.png", caption: "Photo Details"},
+                {url: "static/assets/spire/findpets.png", caption: "Pets Near You"}
             ],
             embed: null,
             type: "mobile"
