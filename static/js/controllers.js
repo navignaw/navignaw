@@ -55,14 +55,14 @@ angular.module('navignaw.controllers', [])
         $scope.slideTo = function(index) {
             $scope.project.screenshots[index].active = true;
             // TODO: breaks prev/next arrows! FIX
-        }
+        };
 
         var setFocusToEmbed = function() {
             $('.embedded-content > embed').focus();
-        }
+        };
         $scope.focus = function() {
             setTimeout(setFocusToEmbed, 500);
-        }
+        };
 
     }])
 ;

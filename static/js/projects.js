@@ -5,7 +5,7 @@ angular.module('navignaw.projects', [])
 
     .value('projects', [
 
-    	/* Webapps */
+        /* Webapps */
         {
             name: "Get Matched",
             id: "getmatched",
@@ -24,13 +24,13 @@ angular.module('navignaw.projects', [])
             embed: null,
             type: "web"
         },
-    	{
+        {
             name: "CMU C#",
             id: "cmucsharp",
             date: "Summer 2013",
             datetime: new Date(2013, 7, 1),
             url: "https://www.cmucsharp.com",
-            description: "Interactive website for college a cappella group.",
+            description: "Interactive website for college a cappella group. Features audition sign ups, contact form, and google calendar integration.",
             note: "Technologies: Ruby on Rails, CoffeeScript",
             collaborators: ["Cary Yang", "Emily Yeh"],
             banner: "static/assets/cmucsharp/banner.png",
@@ -46,8 +46,8 @@ angular.module('navignaw.projects', [])
             date: "Summer 2013",
             datetime: new Date(2013, 6, 1),
             url: "http://prezi.com/pcmsvy2rj4e2/project-surfboard/",
-            description: "Digital wallboard webapp for tracking JIRA stories and bugs. Features NoSQL database, Java server to send and retrieve data via RESTful API, as well as a customizable front-end service with AngularJS to display issues.",
-			note: "Additional feature: coded to accept Leap Motion gestures as well as keyboard/mouse input!",
+            description: "Digital wallboard webapp for tracking JIRA stories and bugs. Features a customizable front-end service with AngularJS to display issues.",
+            note: "Additional feature: coded to accept Leap Motion gestures as well as keyboard/mouse input!",
             collaborators: [],
             banner: "static/assets/surfboard/banner.png",
             screenshots: [
@@ -140,7 +140,7 @@ angular.module('navignaw.projects', [])
             datetime: new Date(2014, 1, 1),
             url: "http://mhackswinter2014.challengepost.com/submissions/20243-spontaneity",
             description: "The spontaneous hangout app, <em>Spontaneity</em> suggests nine categories of activities to participate in, including nearby parties, exercise spots, and even baking recipes from Pinterest. Through the creation of Facebook events to text-message notifications to nearby users, Spontaneity aims to liven up an otherwise boring day.",
-			note: "Developed in 36 hours during MHacks; winner of Yahoo's Best Mobile App.",
+            note: "Developed in 36 hours during MHacks; winner of Yahoo's Best Mobile App.",
             collaborators: ["Lucy Guo", "Gregory Rose", "Angela Zhang"],
             banner: "static/assets/spontaneity/banner.png",
             screenshots: [
@@ -225,7 +225,7 @@ angular.module('navignaw.projects', [])
             datetime: new Date(2012, 12, 1),
             url: "http://www.hbgames.org/forums/viewtopic.php?f=299&t=76684",
             description: "Explore a morbid, alien world as a small, innocent <small>NEWT</small>. In the empty labs of the <small>FACILITY</small>, escaping is not as simple as finding the key to the lock. With lasers, keypads, and fingerprint scanners, to say the least, there will be countless challenges facing your freedom-seeking amphibian. Can you creatively solve your way through five difficult trials, realize your role in the sinister plot of a few evil-genius human scientists, and escape?",
-			note: "Submission for the HBGames.org 5-Year Anniversary Contest; built in Adobe Flash and ActionScript.",
+            note: "Submission for the HBGames.org 5-Year Anniversary Contest; built in Adobe Flash and ActionScript.",
             collaborators: [],
             banner: "static/assets/newt/banner.png",
             screenshots: [],
@@ -269,7 +269,7 @@ angular.module('navignaw.projects', [])
             datetime: new Date(2014, 1, 1),
             url: "http://globalgamejam.org/2014/games/illuminate",
             description: "Explore a changing world in this experimental 3D puzzle-adventure, one which revolves around the perception of one's surroundings.",
-			note: "Developed in Unity and C# for the 2014 Global Game Jam.",
+            note: "Developed in Unity and C# for the 2014 Global Game Jam.",
             collaborators: ["CMU Game Creation Society"],
             banner: "static/assets/illuminate/banner.png",
             screenshots: [
@@ -283,4 +283,3 @@ angular.module('navignaw.projects', [])
         }
 
     ]);
-;
