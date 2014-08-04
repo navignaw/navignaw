@@ -17,7 +17,7 @@ angular.module('navignaw.controllers', [])
                 carousel.carousel('next');
             else
                 carousel.carousel('prev');
-        }
+        };
 
         // Location and routing logic
         $scope.go = function(path) {
@@ -38,13 +38,13 @@ angular.module('navignaw.controllers', [])
     }])
 
     .controller('ProjectCtrl', ['$scope', '$routeParams', '$filter', '$sce', 'projects', function($scope, $routeParams, $filter, $sce, projects) {
-        var projects = $filter('filter')(projects, {id: $routeParams.projectId}, true);
-        if (!projects.length) {
+        var filteredProjects = $filter('filter')(projects, {id: $routeParams.projectId}, true);
+        if (!filteredProjects.length) {
             $scope.$parent.go('/404');
             return;
         }
 
-        $scope.project = projects[0];
+        $scope.project = filteredProjects[0];
         $scope.project.description = $sce.trustAsHtml($scope.project.description);
 
         if ($scope.project.embed) {
