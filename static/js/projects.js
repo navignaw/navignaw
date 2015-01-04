@@ -29,7 +29,7 @@ angular.module('navignaw.projects', [])
             id: "cmucsharp",
             date: "Summer 2013",
             datetime: new Date(2013, 7, 1),
-            url: "https://www.cmucsharp.com",
+            url: "http://cmucsharp.com",
             description: "Interactive website for college a cappella group. Features audition sign ups, contact form, and google calendar integration.",
             note: "Technologies: Ruby on Rails, CoffeeScript",
             collaborators: ["Cary Yang", "Emily Yeh"],
@@ -279,6 +279,30 @@ angular.module('navignaw.projects', [])
                 {url: "static/assets/illuminate/fire.jpg", caption: "Fire and Flames"},
             ],
             embed: null,
+            type: "game"
+        },
+        {
+            name: "Lunatix",
+            id: "lunatix",
+            date: "Fall 2014",
+            datetime: new Date(2014, 8, 1),
+            url: "http://lunatix.herokuapp.com",
+            description: "It is the year 2142, and you must complete a government server literacy training program. But there is more to this interactive program than meets the eye...",
+            note: "A unix-inspired educational text-based adventure game. Developed in Javascript for the web.",
+            collaborators: ["CMU Game Creation Society"],
+            banner: "static/assets/lunatix/banner.png",
+            screenshots: [
+                {url: "static/assets/lunatix/login.png", caption: "Login Screen"},
+                {url: "static/assets/lunatix/survey.png", caption: "Survey"},
+                {url: "static/assets/lunatix/intro.png", caption: "Introductions"},
+                {url: "static/assets/lunatix/animalsort.png", caption: "A test of abilities"}
+            ],
+            embed: {
+                src: "http://lunatix.herokuapp.com",
+                width: 1024,
+                height: 500,
+                html: ""
+            },
             type: "game"
         }
 
