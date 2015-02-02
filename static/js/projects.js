@@ -203,7 +203,7 @@ angular.module('navignaw.projects', [])
             datetime: new Date(2011, 6, 1),
             url: "http://www.hbgames.org/forums/viewtopic.php?p=852052",
             description: "<em>Scavenger</em> is a 2D puzzle-action-adventure game, a la the Legend of Zelda. Explore a vast pixel-perfect world equipped with tools and the unique ability to visualize the past.",
-            note: "Created in RPG Maker XP and coded in Ruby. Scavenger is currently in development!",
+            note: "Created in RPG Maker XP and coded in Ruby. Scavenger is currently in hiatus.",
             collaborators: [],
             banner: "static/assets/scavenger/banner.png",
             screenshots: [
@@ -243,7 +243,7 @@ angular.module('navignaw.projects', [])
             date: "Fall-Spring 2013",
             datetime: new Date(2013, 8, 1),
             url: "http://www.gamecreation.org/game/retrograde",
-            description: "A reverse platformer that explores the return of a hero after his rise to power.",
+            description: "A reverse platformer that explores the return of a hero after his rise to power. Solve puzzles and dodge enemies as you progress (or regress), losing powerups one at a time.",
             note: "Created with Flixel, for Adobe Flash.",
             collaborators: ["CMU Game Creation Society"],
             banner: "static/assets/retrograde/banner.png",
@@ -276,7 +276,7 @@ angular.module('navignaw.projects', [])
                 {url: "static/assets/illuminate/flashlight.jpg", caption: "The Flashlight"},
                 {url: "static/assets/illuminate/choice.jpg", caption: "A Choice"},
                 {url: "static/assets/illuminate/graffiti.jpg", caption: "Graffiti on the Wall"},
-                {url: "static/assets/illuminate/fire.jpg", caption: "Fire and Flames"},
+                {url: "static/assets/illuminate/fire.jpg", caption: "Fire and Flames"}
             ],
             embed: null,
             type: "game"
@@ -304,6 +304,21 @@ angular.module('navignaw.projects', [])
                 html: ""
             },
             type: "game"
+        },
+        {
+            name: "A Plug's Life",
+            id: "aplugslife",
+            date: "Jan 2015",
+            datetime: new Date(2015, 1, 1),
+            url: "http://globalgamejam.org/2015/games/plugs-life",
+            description: "You are a socket gal searching for her prince plug. Explore an electrifying, dizzying world in this rotating puzzle-platformer.",
+            note: "Developed in Unity and C# for the 2015 Global Game Jam.",
+            collaborators: ["Diana Zhu", "Jacob Slone", "Sylvia Kosowski", "Ziqiao Cloud Tian", "Obawole Idowu", "Jacqueline Yeung"],
+            banner: "static/assets/aplugslife/banner.png",
+            screenshots: [
+                {url: "static/assets/aplugslife/lost.png", caption: "Lost and lonely"}
+            ],
+            embed: null,
+            type: "game"
         }
-
     ]);
