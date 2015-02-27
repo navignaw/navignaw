@@ -87,6 +87,20 @@ angular.module('navignaw.projects', [])
             embed: null,
             type: "web"
         },
+        {
+            name: "NeoCache",
+            id: "neocache",
+            date: "February 2015",
+            datetime: new Date(2015, 2, 1),
+            url: null,
+            description: "Annotate the Internet! NeoCache is a Chrome extension for caching comments and images on any website that anyone can view. Create a NeoCache and see it sync on your friends' browser!",
+            note: "Built with Parse and JS.",
+            collaborators: [],
+            banner: null,//"static/assets/navignaw/banner.png",
+            screenshots: [],
+            embed: null,
+            type: "web"
+        },
 
         /* Mobile Apps */
         {
@@ -317,6 +331,22 @@ angular.module('navignaw.projects', [])
             banner: "static/assets/aplugslife/banner.png",
             screenshots: [
                 {url: "static/assets/aplugslife/lost.png", caption: "Lost and lonely"}
+            ],
+            embed: null,
+            type: "game"
+        },
+        {
+            name: "Sudokis",
+            id: "sudokis",
+            date: "February 2015",
+            datetime: new Date(2015, 2, 1),
+            url: "https://play.google.com/store/apps/details?id=com.badassbardgames.tridoku",
+            description: "A fusion of two classic puzzle games; place pieces in the correct position to solve the sudoku puzzle.",
+            note: "Developed in Unity and C# for PC, Mac, and Android.",
+            collaborators: ["Diana Zhu", "Jacob Slone", "Sylvia Kosowski", "Obawole Idowu"],
+            banner: null, //"static/assets/sudokis/banner.png",
+            screenshots: [
+                //{url: "static/assets/aplugslife/lost.png", caption: "Lost and lonely"}
             ],
             embed: null,
             type: "game"
