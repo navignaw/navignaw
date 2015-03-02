@@ -96,7 +96,7 @@ angular.module('navignaw.projects', [])
             description: "Annotate the Internet! NeoCache is a Chrome extension for caching comments and images on any website that anyone can view. Create a NeoCache and see it sync on your friends' browser!",
             note: "Built with Parse and JS.",
             collaborators: [],
-            banner: null,//"static/assets/navignaw/banner.png",
+            banner: "static/assets/neocache/banner.png",
             screenshots: [],
             embed: null,
             type: "web"
@@ -344,7 +344,7 @@ angular.module('navignaw.projects', [])
             description: "A fusion of two classic puzzle games; place pieces in the correct position to solve the sudoku puzzle.",
             note: "Developed in Unity and C# for PC, Mac, and Android.",
             collaborators: ["Diana Zhu", "Jacob Slone", "Sylvia Kosowski", "Obawole Idowu"],
-            banner: null, //"static/assets/sudokis/banner.png",
+            banner: "static/assets/sudokis/banner.png",
             screenshots: [
                 //{url: "static/assets/aplugslife/lost.png", caption: "Lost and lonely"}
             ],
