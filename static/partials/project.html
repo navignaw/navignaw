@@ -17,7 +17,7 @@
   </span>
 </div>
 
-<p ng-bind-html="project.description"></p>
+<p ng-bind-html="project.description | trustAsHtml"></p>
 
 <p>{{project.note}}</p>
 

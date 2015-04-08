@@ -34,4 +34,10 @@ angular.module('navignaw.filters', [])
 	        return $sce.trustAsResourceUrl(val);
 	    };
 	}])
+
+	.filter('trustAsHtml', ['$sce', function($sce) {
+	    return function(val) {
+	        return $sce.trustAsHtml(val);
+	    };
+	}])
 ;

@@ -45,7 +45,6 @@ angular.module('navignaw.controllers', [])
         }
 
         $scope.project = filteredProjects[0];
-        $scope.project.description = $sce.trustAsHtml($scope.project.description);
 
         if ($scope.project.embed) {
             var embedHtml = "<embed width='" + $scope.project.embed.width + "' height='" + $scope.project.embed.height + "' src='" + $scope.project.embed.src + "'></embed>";
