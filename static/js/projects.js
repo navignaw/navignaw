@@ -354,7 +354,12 @@ angular.module('navignaw.projects', [])
                 {url: "static/assets/sudokis/screen4.png", caption: "Gameplay"},
                 {url: "static/assets/sudokis/solved.png", caption: "Solved"}
             ],
-            embed: null,
+            embed: {
+                src: "static/assets/sudokis/build.html",
+                width: 640,
+                height: 480,
+                html: ""
+            },
             type: "game"
         },
         {
@@ -375,7 +380,12 @@ angular.module('navignaw.projects', [])
                 {url: "static/assets/nano/goop.png", caption: "Hopping over goop"},
                 {url: "static/assets/nano/queenVirus.png", caption: "The Queen"}
             ],
-            embed: null,
+            embed: {
+                src: "static/assets/nano/build.html",
+                width: 960,
+                height: 600,
+                html: ""
+            },
             type: "game"
         }
     ]);
