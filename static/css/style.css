@@ -154,6 +154,10 @@ img.mark {
   width: 275px;
 }
 
+.project-info {
+  margin-bottom: 10px;
+}
+
 .project-caption {
   margin-top: -40px;
   color: black;

@@ -21,6 +21,7 @@ angular.module('navignaw.projects', [])
                 {url: "static/assets/getmatched/profile.png", caption: "Profile"},
                 {url: "static/assets/getmatched/search.png", caption: "Searching for Businesses"}
             ],
+            builds: [],
             embed: null,
             type: "web"
         },
@@ -37,6 +38,7 @@ angular.module('navignaw.projects', [])
             screenshots: [
                 {url: "static/assets/cmucsharp/logo.png", caption: "Logo"}
             ],
+            builds: [],
             embed: null,
             type: "web"
         },
@@ -53,6 +55,7 @@ angular.module('navignaw.projects', [])
             screenshots: [
                 {url: "static/assets/surfboard/surfboard.png", caption: "Surfboard"}
             ],
+            builds: [],
             embed: null,
             type: "web"
         },
@@ -70,6 +73,7 @@ angular.module('navignaw.projects', [])
                 {url: "static/assets/hacknbash/game.png", caption: "Game Map"},
                 {url: "static/assets/hacknbash/cd.png", caption: "Changing Directories"}
             ],
+            builds: [],
             embed: null,
             type: "web"
         },
@@ -84,6 +88,7 @@ angular.module('navignaw.projects', [])
             collaborators: [],
             banner: "static/assets/navignaw/banner.png",
             screenshots: [],
+            builds: [],
             embed: null,
             type: "web"
         },
@@ -98,6 +103,7 @@ angular.module('navignaw.projects', [])
             collaborators: [],
             banner: "static/assets/neocache/banner.png",
             screenshots: [],
+            builds: [],
             embed: null,
             type: "web"
         },
@@ -123,6 +129,7 @@ angular.module('navignaw.projects', [])
                 {url: "static/assets/spire/itemviewer.png", caption: "Photo Details"},
                 {url: "static/assets/spire/findpets.png", caption: "Pets Near You"}
             ],
+            builds: [],
             embed: null,
             type: "mobile"
         },
@@ -144,6 +151,7 @@ angular.module('navignaw.projects', [])
                 {url: "static/assets/nommit/venmo.png", caption: "Venmo Payment"},
                 {url: "static/assets/nommit/text.png", caption: "Text Notification"}
             ],
+            builds: [],
             embed: null,
             type: "mobile"
         },
@@ -164,6 +172,7 @@ angular.module('navignaw.projects', [])
                 {url: "static/assets/spontaneity/create.png", caption: "Create an Event"},
                 {url: "static/assets/spontaneity/facebook.png", caption: "Facebook Events"}
             ],
+            builds: [],
             embed: null,
             type: "mobile"
         },
@@ -185,6 +194,7 @@ angular.module('navignaw.projects', [])
                 {url: "static/assets/edugames/conqueror.png", caption: "Conqueror Minigame"},
                 {url: "static/assets/edugames/millionaire.png", caption: "Who Wants to Be a Millionaire"}
             ],
+            builds: [],
             embed: null,
             type: "mobile"
         },
@@ -207,6 +217,7 @@ angular.module('navignaw.projects', [])
                 {url: "static/assets/omnisia/blitz.png", caption: "Battle Blitz"},
                 {url: "static/assets/omnisia/sewers.png", caption: "Puzzle in the Sewers"}
             ],
+            builds: [],
             embed: null,
             type: "game"
         },
@@ -229,6 +240,7 @@ angular.module('navignaw.projects', [])
                 {url: "static/assets/scavenger/mines2.png", caption: "Golmar Mines: Past"},
                 {url: "static/assets/scavenger/mines3.png", caption: "Chucking Bombs"}
             ],
+            builds: [],
             embed: null,
             type: "game"
         },
@@ -243,6 +255,9 @@ angular.module('navignaw.projects', [])
             collaborators: [],
             banner: "static/assets/newt/banner.png",
             screenshots: [],
+            builds: [
+                {type: "Flash", url: "https://www.dropbox.com/s/ohqkm4sgihg9sh0/NEWT.swf?dl=0"}
+            ],
             embed: {
                 src: "http://hbgames.org/games/flash/NEWT.swf",
                 width: 640,
@@ -268,6 +283,9 @@ angular.module('navignaw.projects', [])
                 {url: "static/assets/retrograde/shrooms.png", caption: "Aerial Platforming"},
                 {url: "static/assets/retrograde/walljump.png", caption: "Wall Jumping"}
             ],
+            builds: [
+                {type: "Flash", url: "https://www.dropbox.com/s/ny74tm9i3fgutim/Retrograde.swf?dl=0"}
+            ],
             embed: {
                 src: "http://stage.gamecreation.org/retrograde/Retrograde.swf",
                 width: 640,
@@ -292,6 +310,7 @@ angular.module('navignaw.projects', [])
                 {url: "static/assets/illuminate/graffiti.jpg", caption: "Graffiti on the Wall"},
                 {url: "static/assets/illuminate/fire.jpg", caption: "Fire and Flames"}
             ],
+            builds: [],
             embed: null,
             type: "game"
         },
@@ -311,6 +330,7 @@ angular.module('navignaw.projects', [])
                 {url: "static/assets/lunatix/intro.png", caption: "Introductions"},
                 {url: "static/assets/lunatix/animalsort.png", caption: "A test of abilities"}
             ],
+            builds: [],
             embed: {
                 src: "http://lunatix.herokuapp.com",
                 width: 1024,
@@ -330,7 +350,14 @@ angular.module('navignaw.projects', [])
             collaborators: ["Diana Zhu", "Jacob Slone", "Sylvia Kosowski", "Ziqiao Cloud Tian", "Obawole Idowu", "Jacqueline Yeung"],
             banner: "static/assets/aplugslife/banner.png",
             screenshots: [
-                {url: "static/assets/aplugslife/lost.png", caption: "Lost and lonely"}
+                {url: "static/assets/aplugslife/lost.png", caption: "Lost and lonely"},
+                {url: "static/assets/aplugslife/rotate.png", caption: "Up the stairs"},
+                {url: "static/assets/aplugslife/battery.png", caption: "Battery"}
+            ],
+            builds: [
+                {type: "Windows", url: "https://www.dropbox.com/s/c76gvmgen90j2cs/windows.zip?dl=0"},
+                {type: "Mac", url: "https://www.dropbox.com/s/p6xu6lzjv7rkpio/macosx.zip?dl=0"},
+                {type: "Linux", url: "https://www.dropbox.com/s/9k6uk6ll3nl90mz/linux.zip?dl=0"}
             ],
             embed: null,
             type: "game"
@@ -354,6 +381,11 @@ angular.module('navignaw.projects', [])
                 {url: "static/assets/sudokis/screen4.png", caption: "Gameplay"},
                 {url: "static/assets/sudokis/solved.png", caption: "Solved"}
             ],
+            builds: [
+                {type: "Windows", url: "https://www.dropbox.com/s/8dlm6mho2qm5l4y/windows.zip?dl=0"},
+                {type: "Mac", url: "https://www.dropbox.com/s/vyp740a6hny0llf/macosx.zip?dl=0"},
+                {type: "Linux", url: "https://www.dropbox.com/s/h58zifhg14cqrl6/linux.zip?dl=0"}
+            ],
             embed: {
                 src: "static/assets/sudokis/build.html",
                 width: 640,
@@ -369,7 +401,7 @@ angular.module('navignaw.projects', [])
             datetime: new Date(2015, 3, 1),
             url: "",
             description: "Guide two robots, Nano and Pico, through Micro's body to save his heart from viruses in this puzzle-platformer.",
-            note: "Developed in Unity and C# for PC and Mac.",
+            note: "Developed in Unity and C#.",
             collaborators: ["Diana Zhu", "Jacob Slone", "Sylvia Kosowski", "Obawole Idowu"],
             banner: "static/assets/nano/banner.png",
             screenshots: [
@@ -379,6 +411,11 @@ angular.module('navignaw.projects', [])
                 {url: "static/assets/nano/hamstergear.png", caption: "Running in a gear"},
                 {url: "static/assets/nano/goop.png", caption: "Hopping over goop"},
                 {url: "static/assets/nano/queenVirus.png", caption: "The Queen"}
+            ],
+            builds: [
+                {type: "Windows", url: "https://www.dropbox.com/s/2sc4a3asogywdlu/windows.zip?dl=0"},
+                {type: "Mac", url: "https://www.dropbox.com/s/2m94bcrfxpfwbb6/macosx.zip?dl=0"},
+                {type: "Linux", url: "https://www.dropbox.com/s/bu00ckk1yqo8q31/linux.zip?dl=0"},
             ],
             embed: {
                 src: "static/assets/nano/build.html",
