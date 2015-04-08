@@ -381,6 +381,9 @@ angular.module('navignaw.projects', [])
                 {url: "static/assets/sudokis/screen4.png", caption: "Gameplay"},
                 {url: "static/assets/sudokis/solved.png", caption: "Solved"}
             ],
+            music: [
+                {title: "Sudokis Theme", url: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/199912626&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"}
+            ],
             builds: [
                 {type: "Windows", url: "https://www.dropbox.com/s/8dlm6mho2qm5l4y/windows.zip?dl=0"},
                 {type: "Mac", url: "https://www.dropbox.com/s/vyp740a6hny0llf/macosx.zip?dl=0"},
