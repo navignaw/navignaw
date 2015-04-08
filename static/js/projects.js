@@ -356,5 +356,26 @@ angular.module('navignaw.projects', [])
             ],
             embed: null,
             type: "game"
+        },
+        {
+            name: "nano",
+            id: "nano",
+            date: "March 2015",
+            datetime: new Date(2015, 3, 1),
+            url: "",
+            description: "Guide two robots, Nano and Pico, through Micro's body to save his heart from viruses in this puzzle-platformer.",
+            note: "Developed in Unity and C# for PC and Mac.",
+            collaborators: ["Diana Zhu", "Jacob Slone", "Sylvia Kosowski", "Obawole Idowu"],
+            banner: "static/assets/nano/banner.png",
+            screenshots: [
+                {url: "static/assets/nano/title.png", caption: "Title"},
+                {url: "static/assets/nano/hubWorld.png", caption: "Micro's Heart"},
+                {url: "static/assets/nano/deployed.png", caption: "Deploying Pico"},
+                {url: "static/assets/nano/hamstergear.png", caption: "Running in a gear"},
+                {url: "static/assets/nano/goop.png", caption: "Hopping over goop"},
+                {url: "static/assets/nano/queenVirus.png", caption: "The Queen"}
+            ],
+            embed: null,
+            type: "game"
         }
     ]);
