@@ -346,7 +346,13 @@ angular.module('navignaw.projects', [])
             collaborators: ["Diana Zhu", "Jacob Slone", "Sylvia Kosowski", "Obawole Idowu"],
             banner: "static/assets/sudokis/banner.png",
             screenshots: [
-                //{url: "static/assets/aplugslife/lost.png", caption: "Lost and lonely"}
+                {url: "static/assets/sudokis/menu.png", caption: "Menu"},
+                {url: "static/assets/sudokis/controls.png", caption: "Controls"},
+                {url: "static/assets/sudokis/screen1.png", caption: "Gameplay"},
+                {url: "static/assets/sudokis/screen2.png", caption: "Gameplay"},
+                {url: "static/assets/sudokis/screen3.png", caption: "Gameplay"},
+                {url: "static/assets/sudokis/screen4.png", caption: "Gameplay"},
+                {url: "static/assets/sudokis/solved.png", caption: "Solved"}
             ],
             embed: null,
             type: "game"
