@@ -21,12 +21,12 @@
 
 <p>{{project.note}}</p>
 
-<div ng-show="project.collaborators" class="project-info">
+<div ng-show="project.collaborators.length" class="project-info">
   <strong>Collaborators:</strong> {{project.collaborators.join(', ')}}
 </div>
 
 <!-- Screenshots -->
-<div class="screenshots row" ng-if="project.screenshots">
+<div class="screenshots row" ng-if="project.screenshots.length">
   <div class="col-lg-10 col-lg-offset-1">
     <h4>Screenshots</h4>
     <div class="row" ng-repeat="row in project.screenshots | split:3">
