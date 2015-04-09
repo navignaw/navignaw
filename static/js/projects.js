@@ -300,7 +300,7 @@ angular.module('navignaw.projects', [])
             date: "Jan 2014",
             datetime: new Date(2014, 1, 1),
             url: "http://globalgamejam.org/2014/games/illuminate",
-            description: "Explore a changing world in this experimental 3D puzzle-adventure, one which revolves around the perception of one's surroundings.<br/>My first foray into Unity was an eye-opener as I learned to develop and design maps in 3D.",
+            description: "Explore a changing world in this experimental 3D puzzle-adventure, one which revolves around the perception of one's surroundings. There are no enemies to fight, no weapons to shoot-- only a single flashlight to see.<br/>My first foray into Unity was an eye-opener as I learned to develop and design maps in 3D.",
             note: "Developed in Unity3D and C# for the 2014 Global Game Jam.",
             collaborators: ["CMU Game Creation Society"],
             banner: "static/assets/illuminate/banner.png",
@@ -310,7 +310,9 @@ angular.module('navignaw.projects', [])
                 {url: "static/assets/illuminate/graffiti.jpg", caption: "Graffiti on the Wall"},
                 {url: "static/assets/illuminate/fire.jpg", caption: "Fire and Flames"}
             ],
-            builds: [],
+            builds: [
+                {type: "Windows", url: "https://www.dropbox.com/s/b2omyu0lvy6dfk7/Illuminate.zip?dl=0"}
+            ],
             embed: null,
             type: "game"
         },
