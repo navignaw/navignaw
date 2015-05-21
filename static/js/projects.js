@@ -419,7 +419,7 @@ angular.module('navignaw.projects', [])
             builds: [
                 {type: "Windows", url: "https://www.dropbox.com/s/2sc4a3asogywdlu/windows.zip?dl=0"},
                 {type: "Mac", url: "https://www.dropbox.com/s/2m94bcrfxpfwbb6/macosx.zip?dl=0"},
-                {type: "Linux", url: "https://www.dropbox.com/s/bu00ckk1yqo8q31/linux.zip?dl=0"},
+                {type: "Linux", url: "https://www.dropbox.com/s/bu00ckk1yqo8q31/linux.zip?dl=0"}
             ],
             embed: {
                 src: "static/assets/nano/build.html",
@@ -427,6 +427,62 @@ angular.module('navignaw.projects', [])
                 height: 600,
                 html: ""
             },
+            type: "game"
+        },
+        {
+            name: "Board to Death",
+            id: "boardtodeath",
+            date: "April 2015",
+            datetime: new Date(2015, 4, 1),
+            url: "",
+            description: "Cut the threads of life and ferry souls across the River Styx in this fast-paced, time-management game based off Greek mythology.<br/><i>Board to Death</i> was the final project for the course Game Design, Development, and Prototyping. Scoped, designed, and developed over 8 weeks, it was our most tuned and tested game to date. As level designer and programmer, I designed the tutorial stages and finetuned the mathematical equations and formulas that power the game.",
+            note: "Developed in Unity2D and C#.",
+            collaborators: ["Diana Zhu", "Jacob Slone", "Sylvia Kosowski", "Obawole Idowu"],
+            banner: "static/assets/boardtodeath/banner.png",
+            screenshots: [
+                {url: "static/assets/boardtodeath/title.png", caption: "Title"},
+                {url: "static/assets/boardtodeath/cutting.png", caption: "Cutting threads"},
+                {url: "static/assets/boardtodeath/boats.png", caption: "Buying boats"},
+                {url: "static/assets/boardtodeath/gameover.jpg", caption: "Overrun by monsters"}
+            ],
+            builds: [
+                {type: "Windows", url: "https://www.dropbox.com/s/d01z1hf70bysfj3/windows.zip?dl=0"},
+                {type: "Mac", url: "https://www.dropbox.com/s/z8n4sgeip1z5bc7/mac.zip?dl=0"},
+                {type: "Linux", url: "https://www.dropbox.com/s/davt1g7e14ub8u4/linux.zip?dl=0"}
+            ],
+            embed: {
+                src: "static/assets/boardtodeath/build.html",
+                width: 800,
+                height: 450,
+                html: ""
+            },
+            type: "game"
+        },
+        {
+            name: "Cacowphony",
+            id: "cacowphony",
+            date: "May 2015",
+            datetime: new Date(2015, 5, 1),
+            url: "",
+            description: "Tap along to the beat in this rhythm-based educational music game. In addition to reading sheet music, <i>Cacowphony</i> builds fluency in sightreading basic rhythms. 3rd place winner for CMU's Design of Educational Games.",
+            note: "Developed in Unity2D and C#.",
+            collaborators: ["Sarah Chen", "Roger Liu", "Lucy Pei"],
+            banner: "static/assets/cacowphony/banner.png",
+            screenshots: [
+                {url: "static/assets/cacowphony/title.png", caption: "Title"},
+                {url: "static/assets/cacowphony/perfect.png", caption: "Tapping the beat"}
+            ],
+            builds: [
+                {type: "Windows", url: "https://www.dropbox.com/s/kup1os1aq6om3hd/Cacowphony.zip?dl=0"}
+                /*{type: "Mac", url: "https://www.dropbox.com/s/z8n4sgeip1z5bc7/mac.zip?dl=0"},
+                {type: "Linux", url: "https://www.dropbox.com/s/davt1g7e14ub8u4/linux.zip?dl=0"}*/
+            ],
+            embed: null,/*{
+                src: "static/assets/boardtodeath/build.html",
+                width: 800,
+                height: 450,
+                html: ""
+            },*/
             type: "game"
         }
     ]);
