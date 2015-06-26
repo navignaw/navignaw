@@ -464,25 +464,28 @@ angular.module('navignaw.projects', [])
             date: "May 2015",
             datetime: new Date(2015, 5, 1),
             url: "",
-            description: "Tap along to the beat in this rhythm-based educational music game. In addition to reading sheet music, <i>Cacowphony</i> builds fluency in sightreading basic rhythms. 3rd place winner for CMU's Design of Educational Games.",
+            description: "Tap along to the beat in this rhythm-based educational music game. In addition to reading sheet music, <i>Cacowphony</i> builds fluency in sightreading basic rhythms. 3rd place winner for CMU's Design of Educational Games S15 final competition.",
             note: "Developed in Unity2D and C#.",
             collaborators: ["Sarah Chen", "Roger Liu", "Lucy Pei"],
             banner: "static/assets/cacowphony/banner.png",
             screenshots: [
                 {url: "static/assets/cacowphony/title.png", caption: "Title"},
-                {url: "static/assets/cacowphony/perfect.png", caption: "Tapping the beat"}
+                {url: "static/assets/cacowphony/songselect.png", caption: "Select a song"},
+                {url: "static/assets/cacowphony/perfect.png", caption: "Tapping the beat"},
+                {url: "static/assets/cacowphony/miss.png", caption: "Missed the bird"},
+                {url: "static/assets/cacowphony/angryrests.png", caption: "Angry rests"}
             ],
             builds: [
-                {type: "Windows", url: "https://www.dropbox.com/s/kup1os1aq6om3hd/Cacowphony.zip?dl=0"}
-                /*{type: "Mac", url: "https://www.dropbox.com/s/z8n4sgeip1z5bc7/mac.zip?dl=0"},
-                {type: "Linux", url: "https://www.dropbox.com/s/davt1g7e14ub8u4/linux.zip?dl=0"}*/
+                {type: "Windows", url: "https://www.dropbox.com/s/urefhhtgzku6fvi/windows.zip?dl=0"},
+                {type: "Mac", url: "https://www.dropbox.com/s/rmyryo74it1ygdm/mac.zip?dl=0"},
+                {type: "Linux", url: "https://www.dropbox.com/s/1ofmg6grls2jsba/linux.zip?dl=0"}
             ],
-            embed: null,/*{
-                src: "static/assets/boardtodeath/build.html",
+            embed: {
+                src: "static/assets/cacowphony/build.html",
                 width: 800,
                 height: 450,
                 html: ""
-            },*/
+            },
             type: "game"
         }
     ]);
