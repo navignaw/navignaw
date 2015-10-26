@@ -487,5 +487,24 @@ angular.module('navignaw.projects', [])
                 html: ""
             },
             type: "game"
-        }
+        },
+        {
+            name: "The Elevator",
+            id: "elevator",
+            date: "October 2015",
+            datetime: new Date(2015, 10, 1),
+            url: "",
+            description: "A reflective journey into space for a sick, old man's dying wish.",
+            note: "This is a dialogue-heavy visual novel game made in Ren'Py for Experimental Game Design, 2015.",
+            collaborators: ["Crystal Hou (character art)"],
+            banner: "static/assets/elevator/banner.jpg",
+            screenshots: [
+                {url: "static/assets/elevator/title.png", caption: "Title"}
+            ],
+            builds: [
+                {type: "Download now", url: "https://www.dropbox.com/s/colme4l7qooxtpp/TheElevator-1.1.zip?dl=0"}
+            ],
+            embed: null,
+            type: "game"
+        },
     ]);
