@@ -10,7 +10,7 @@
 <h4>{{project.date}}</h4>
 
 <div ng-show="project.builds" class="project-info">
-  <strong>Builds:</strong>
+  <strong ng-show="project.builds.length">Builds:</strong>
   <span ng-repeat="build in project.builds">
     <a ng-href="{{build.url}}" target="_blank">{{build.type}}</a>
     <span ng-show="!$last"> | </span>

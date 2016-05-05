@@ -508,6 +508,28 @@ angular.module('navignaw.projects', [])
             type: "game"
         },
         {
+            name: "Sisyphus",
+            id: "sisyphus",
+            date: "January 2016",
+            datetime: new Date(2016, 1, 31),
+            url: "http://globalgamejam.org/2016/games/sisyphus",
+            description: "A Sisyphean tale of discovery, perseverance, and rock rolling.",
+            note: "Inspired by the Greek myth of Sisyphus, this game was developed in 48 hours for the 2016 Global Game Jam under the theme 'ritual.'",
+            collaborators: ["Melanie Kim", "Ralph Kim", "Swetha Kannan"],
+            banner: "static/assets/sisyphus/banner.png",
+            screenshots: [
+                {url: "static/assets/sisyphus/title.png", caption: "Title"},
+                {url: "static/assets/sisyphus/mountain1.png", caption: "Climbing the mountain"},
+                {url: "static/assets/sisyphus/mountain2.png", caption: "Dusk"},
+                {url: "static/assets/sisyphus/mountain3.png", caption: "Stars"},
+            ],
+            builds: [
+                {type: "Download now", url: "https://www.dropbox.com/s/z0uegbx6cmm80yg/Sisyphus.zip?dl=0"}
+            ],
+            embed: null,
+            type: "game"
+        },
+        {
             name: "Too Many Chefs",
             id: "toomanychefs",
             date: "April 2016",
@@ -528,5 +550,5 @@ angular.module('navignaw.projects', [])
             ],
             embed: null,
             type: "game"
-        },
+        }
     ]);
