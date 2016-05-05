@@ -507,4 +507,26 @@ angular.module('navignaw.projects', [])
             embed: null,
             type: "game"
         },
+        {
+            name: "Too Many Chefs",
+            id: "toomanychefs",
+            date: "April 2016",
+            datetime: new Date(2016, 4, 1),
+            url: "http://www.toomanychefs.party",
+            description: "A text-based cooperative party cooking game for up to 4 players. Team up with friends in local multiplayer to make the best 4-course meal, or multitask to manage 4 stations at once!",
+            note: "Coded in React; designed for Game Design, 2016.",
+            collaborators: [],
+            banner: "static/assets/toomanychefs/banner.png",
+            screenshots: [
+                {url: "static/assets/toomanychefs/title.png", caption: "Title"},
+                {url: "static/assets/toomanychefs/loading.png", caption: "Loading"},
+                {url: "static/assets/toomanychefs/waiting.png", caption: "Ready to Begin"},
+                {url: "static/assets/toomanychefs/brunch.png", caption: "Brunch with 4"}
+            ],
+            builds: [
+                {type: "Play now", url: "http://www.toomanychefs.party"}
+            ],
+            embed: null,
+            type: "game"
+        },
     ]);
