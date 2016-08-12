@@ -514,7 +514,7 @@ angular.module('navignaw.projects', [])
             datetime: new Date(2016, 1, 31),
             url: "http://globalgamejam.org/2016/games/sisyphus",
             description: "A Sisyphean tale of discovery, perseverance, and rock rolling.",
-            note: "Inspired by the Greek myth of Sisyphus, this game was developed in 48 hours for the 2016 Global Game Jam under the theme 'ritual.'",
+            note: "Inspired by the Greek myth of Sisyphus, this game was developed in 48 hours for the 2016 Global Game Jam under the theme 'ritual.' Winner of Best Art, People's Choice, and the judges' Best in Show award",
             collaborators: ["Melanie Kim", "Ralph Kim", "Swetha Kannan"],
             banner: "static/assets/sisyphus/banner.png",
             screenshots: [
