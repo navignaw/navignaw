@@ -109,7 +109,6 @@ img.mark {
 }
 
 .project-slide {
-  transition: margin-left 0.5s;
   border-left-width: 12px;
   border-left-style: solid;
   border-top-left-radius: 8px;
@@ -125,10 +124,6 @@ img.mark {
   background: -ms-linear-gradient(left, #d7e0ee 0%,#d7e0ee 80%,#c5cee0 100%); /* IE10+ */
   background: linear-gradient(to right, #d7e0ee 0%,#d7e0ee 80%,#c5cee0 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7e0ee', endColorstr='#c5cee0',GradientType=1 ); /* IE6-9 */
-}
-
-.project-slide:hover {
-  margin-left: 30px;
 }
 
 .project-slide h3 {

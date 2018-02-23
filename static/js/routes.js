@@ -3,7 +3,7 @@
 angular.module('navignaw.routes', ['ngRoute'])
 
    // configure views
-   .config(['$routeProvider', function($routeProvider) {
+   .config(function($routeProvider, $locationProvider) {
       $routeProvider.when('/', {
          template: '',
       })
@@ -20,4 +20,7 @@ angular.module('navignaw.routes', ['ngRoute'])
       .otherwise({
          redirectTo: '/'
       });
-   }]);
+
+      // Disable hash in url.
+      $locationProvider.html5Mode(true);
+   });

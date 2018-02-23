@@ -1,4 +1,4 @@
-from flask import Flask, send_file, make_response
+from flask import Flask, make_response, redirect, send_file, url_for
 import os
 
 
@@ -19,6 +19,10 @@ def loadHtml(path):
 @app.route('/')
 def index():
     return loadHtml('templates/index.html')
+
+@app.route('/projects/<project>')
+def projects(project):
+    return redirect(url_for('index', _anchor='/projects/' + project))
 
 @app.route('/partials/<partial>', methods=['GET'])
 def getPartial(partial):
